@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RS create.com</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background: rgb(61, 197, 228);
+        }
+        header {
+            background-color: gray;
+            height: 80px;
+            display: flex;
+            align-items: center;
+        }
+        header>h2 {
+            width: fit-content;
+            margin: 20px;
+            padding: 5px;
+            background-color: rgb(235, 235, 249);
+            border-radius: 15px;
+            color: goldenrod;
+            font-size: 2rem;
+            font-style: italic;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        h1 {
+            margin: 20px 10px;
+            font-size: 3.5rem;
+            font-family: 'Dai Banna SIL', 'Arial Narrow', Arial, sans-serif
+        }
+        h2 {
+            margin: 10px;
+        }
+        img {
+            height: 150px;
+            margin: 10px 10px 0px 0px;
+            border: 5px solid chocolate;
+            border-style: ridge;
+        }
+        span {
+            color: rgb(203, 51, 217);
+        }
+        .main {
+            display: flex;
+            flex-direction: row;
+        }
+        .left,
+        .right {
+            margin: 20px;
+            display: flex;
+            flex-direction: row;
+        }
+        .content {
+            float: right;
+            margin: 0px 10px;
+        }
+        footer {
+            position: relative;
+            bottom: 0;
+            background-color: gray;
+            color: white;
+            text-align: end;
+            height: 50px;
+            width: 100%;
+        }
+        footer>p {
+            padding: 10px;
+            background-color: gray;
+            color: yellow;
+        }
+        p {
+            margin: 10px 5px;
+            font-size: 1.2rem;
+        }
+        @media (max-width: 950px) {
+
+            .main,
+            .left,
+            .right {
+                flex-direction: column;
+            }
+            .content {
+                text-align: center;
+            }
+            img {
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>RS create.com</h2>
+    </header>
+    <h1>We are a <span>Creative</span> Logo Design Agency</h1>
+    <div class="main">
+
+        <div class="left">
+            <img src="RS_logo.jpg" alt="RS logo">
+            <div class="content">
+                <h2>Sample logo design 1</h2>
+                <p><strong>"A logo doesn't sell directly,<br/>it identifies."</strong></p>
+            </div>
+        </div>
+        <div class="right">
+            <img src="AD_logo.jpg" alt="AD logo">
+            <div class="content">
+                <h2>Sample logo design 2</h2>
+                <p><strong>"Creative without strategy is called 'art'.<br/>Creative with strategy is called 'advertising'. "</strong></p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p><b>Discover.. Develop.. Design..</b></p>
+    </footer>
+</body>
+</html>
